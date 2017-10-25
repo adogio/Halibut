@@ -1,5 +1,5 @@
 {
-  "name": "halibut",
+  "name": "halibuts",
   "version": "1.0.0",
   "description": ":blowfish: A beautiful weather display component for React",
   "main": "lib/import.js",
