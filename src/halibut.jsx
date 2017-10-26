@@ -37,12 +37,18 @@ Halibut.propTypes = {
         WEATHERS.SNOW,
         WEATHERS.STORM,
         WEATHERS.WIND,
-        WEATHERS.RANDOM
+        WEATHERS.RANDOM,
+        WEATHERS.STAR,
+        WEATHERS.TWILIGHT,
+        WEATHERS.MIDNIGHT,
+        WEATHERS.NOVA,
+        WEATHERS.ROSE,
+        WEATHERS.CHAOS
     ])
 };
 
 Halibut.defaultProps = {
-    weather: WEATHERS.SUN
+    weather: WEATHERS.RANDOM
 };
 
 export default Halibut;

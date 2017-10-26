@@ -8,6 +8,12 @@ const WEATHERS = {
     STORM: "Stroming",
     WIND: "Windy",
     BREEZE: "Breezeing",
-    RANDOM: "Random"
+    RANDOM: "Random",
+    STAR: "Star",
+    TWILIGHT: "Twilight",
+    MIDNIGHT: "Midnight",
+    NOVA: "Nova",
+    ROSE: "Rose",
+    CHAOS: "Chaos"
 }
 export default WEATHERS;
