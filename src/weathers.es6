@@ -7,6 +7,7 @@ const WEATHERS = {
     HAIL: "Hailing",
     STORM: "Stroming",
     WIND: "Windy",
-    BREEZE: "Breezeing"
+    BREEZE: "Breezeing",
+    RANDOM: "Random"
 }
 export default WEATHERS;
