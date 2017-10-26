@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Badge from './badge';
 import Card from './card';
+import Corner from './corner';
 import WEATHERS from './weathers';
 import COLORS from './colors';
 
@@ -13,9 +14,11 @@ class Halibut extends Component {
     }
 
     render() {
+        const TopCorner = this.props.corner;
         return (
             <div style={{ height: "100vh", }}>
                 {COLORS(this.props.weather).map(this.renderColors)}
+                {TopCorner ? <Corner><TopCorner /></Corner> : null}
                 <Card>{this.props.children}</Card>
             </div>
         );
