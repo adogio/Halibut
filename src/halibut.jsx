@@ -36,7 +36,8 @@ Halibut.propTypes = {
         WEATHERS.RAIN,
         WEATHERS.SNOW,
         WEATHERS.STORM,
-        WEATHERS.WIND
+        WEATHERS.WIND,
+        WEATHERS.RANDOM
     ])
 };
 
