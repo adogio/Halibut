@@ -1,6 +1,6 @@
 import WEATHERS from './weathers';
 
-export default function (weather) {
+const getColor = function (weather) {
     switch (weather) {
         case WEATHERS.SUN:
             return ["fff353", "fec039", "fe8c43", "ed6023", "e20909"];
@@ -20,7 +20,13 @@ export default function (weather) {
             return ["f7f4ea", "ded9e2", "c0b9dd", "80a1d4", "75c9c8"];
         case WEATHERS.BREEZE:
             return ["7bdff2", "b2f7ef", "eff7f6", "f7d6e0", "f2b5d4"];
+        case WEATHERS.RANDOM:
+            let ran = Math.floor((Math.random() * 1000)) % 9;
+            let all = [getColor(WEATHERS.SUN), getColor(WEATHERS.RAIN), getColor(WEATHERS.SNOW), getColor(WEATHERS.CLOUD), getColor(WEATHERS.FOG), getColor(WEATHERS.HAIL), getColor(WEATHERS.STORM), getColor(WEATHERS.WIND), getColor(WEATHERS.BREEZE)];
+            return all[ran];
         default:
             return ["fff353", "fec039", "fe8c43", "ed6023", "e20909"];
     }
 }
+
+export default getColor;
