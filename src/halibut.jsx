@@ -3,8 +3,7 @@ import PropTypes from 'prop-types';
 import Badge from './badge';
 import Card from './card';
 import Corner from './corner';
-import WEATHERS from './weathers';
-import COLORS from './colors';
+import COLORS, { WEATHERS } from 'chaetodon';
 
 class Halibut extends Component {
 

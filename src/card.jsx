@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// backgroundColor: "rgba(255, 255, 255, 0.212)",
+
 class Card extends Component {
     render() {
         return (
