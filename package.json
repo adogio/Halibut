@@ -1,6 +1,6 @@
 {
   "name": "halibuts",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": ":blowfish: A beautiful weather display component for React",
   "main": "lib/import.js",
   "scripts": {
