@@ -15,7 +15,7 @@ class Halibut extends Component {
     render() {
         const TopCorner = this.props.corner;
         return (
-            <div style={{ height: "100vh", }}>
+            <div style={{ height: "100vh", position: "relative" }}>
                 {COLORS(this.props.weather).map(this.renderColors)}
                 {TopCorner ? <Corner><TopCorner /></Corner> : null}
                 <Card>{this.props.children}</Card>
