@@ -31,6 +31,15 @@ describe('Render Halibut in background of page', () => {
         expect(renderedHalibut.children('Badge').at(4).prop('color')).to.be.equal(COLORS(WEATHERS.SUN)[4])
     })
 
+    it('halibut shall have corrent colors (2)', () => {
+        renderedHalibut = shallow(<Halibut weather={WEATHERS.WIND}>Test Children</Halibut>);
+        expect(renderedHalibut.children('Badge').at(0).prop('color')).to.be.equal(COLORS(WEATHERS.WIND)[0])
+        expect(renderedHalibut.children('Badge').at(1).prop('color')).to.be.equal(COLORS(WEATHERS.WIND)[1])
+        expect(renderedHalibut.children('Badge').at(2).prop('color')).to.be.equal(COLORS(WEATHERS.WIND)[2])
+        expect(renderedHalibut.children('Badge').at(3).prop('color')).to.be.equal(COLORS(WEATHERS.WIND)[3])
+        expect(renderedHalibut.children('Badge').at(4).prop('color')).to.be.equal(COLORS(WEATHERS.WIND)[4])
+    })
+
     it('halibut shall have correct style', () => {
         expect(renderedHalibut.prop('style').position).to.be.equal('relative');
     })
