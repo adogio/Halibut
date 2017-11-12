@@ -6,3 +6,6 @@ deploy :
 
 publish :
 	npm publish
+
+test :
+	mocha test
