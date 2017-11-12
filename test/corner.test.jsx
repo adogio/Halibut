@@ -22,6 +22,11 @@ describe('Render Corner in background of page', () => {
         expect(renderedCorner.prop('children')).to.be.equal('Test Children');
     })
 
+    it('corner shall have enpty children', () => {
+        renderedCorner = shallow(<Corner />);
+        expect(renderedCorner.prop('children')).to.be.undefined();
+    })
+
     it('corner shall have correct style', () => {
         expect(renderedCorner.prop('style').position).to.be.equal('absolute');
     })
